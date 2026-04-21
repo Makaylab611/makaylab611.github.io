@@ -1,1 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Makayla Bluefort | Portfolio</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;700&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet"/>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth;}
+
+:root{
+  --cream:#F5F0E8;
+  --stone:#8C7B6B;
+  --dark:#1A1714;
+  --card:#1F1B18;
+  --accent:#D4A882;
+  --border:rgba(196,181,160,0.15);
+  --muted:rgba(245,240,232,0.5);
+}
+
+body{
+  background:var(--dark);
+  color:var(--cream);
+  font-family:'DM Mono',monospace;
+}
+
+.page{
+  max-width:1000px;
+  margin:auto;
+  padding:40px 20px;
+}
+
+/* NAV */
+nav{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:60px;
+}
+
+nav a{
+  color:var(--stone);
+  text-decoration:none;
+  font-size:12px;
+  letter-spacing:2px;
+}
+
+nav a:hover{color:var(--accent);}
+
+/* HEADINGS */
+h1{
+  font-family:'Unbounded',sans-serif;
+  font-size:48px;
+}
+
+h2{
+  margin-top:80px;
+  margin-bottom:20px;
+  font-size:14px;
+  letter-spacing:3px;
+  color:var(--stone);
+}
+
+/* HERO */
+.hero p{
+  margin-top:20px;
+  color:var(--muted);
+  line-height:1.7;
+}
+
+/* BUTTON */
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:10px 18px;
+  border:1px solid var(--accent);
+  color:var(--accent);
+  text-decoration:none;
+}
+
+.btn:hover{
+  background:var(--accent);
+  color:black;
+}
+
+/* PROJECT */
+.project{
+  border-top:1px solid var(--border);
+  padding:20px 0;
+}
+
+.project-title{
+  font-size:18px;
+  margin-bottom:10px;
+}
+
+/* LIST */
+ul{margin-left:20px;}
+li{margin-bottom:8px;}
+
+</style>
+</head>
+
+<body>
+<div class="page">
+
+<!-- NAV -->
+<nav>
+  <a href="#">MB</a>
+  <div>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#certs">Certs</a>
+  </div>
+</nav>
+
+<!-- HOME -->
+<section class="hero">
+  <h1>Makayla Bluefort</h1>
+  <p>
+    Systems Analyst focused on SQL, production support, and AI-powered workflows.
+    I build tools that improve efficiency and solve real business problems.
+  </p>
+
+  <a href="#projects" class="btn">View Projects</a>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>PROJECTS</h2>
+
+  <div class="project">
+    <div class="project-title">AI Job Search Agent</div>
+    <p>
+      Built an automated system using AI to analyze job listings, rank opportunities,
+      and generate structured reports.
+    </p>
+  </div>
+
+  <div class="project">
+    <div class="project-title">AI Model Comparison</div>
+    <p>
+      Compared ChatGPT, Claude, and Gemini across real tasks to determine strengths,
+      weaknesses, and best use cases.
+    </p>
+  </div>
+
+</section>
+
+<!-- RESUME -->
+<section id="resume">
+  <h2>RESUME</h2>
+
+  <p>
+    Data-driven Systems Analyst with experience supporting enterprise applications
+    and databases in high-availability environments.
+  </p>
+
+  <ul>
+    <li>SQL, Oracle, PostgreSQL</li>
+    <li>Python, Bash, PowerShell</li>
+    <li>AutoSys Scheduling</li>
+    <li>ServiceNow, Splunk, Jira</li>
+  </ul>
+
+  <a href="#" class="btn">Download Resume</a>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certs">
+  <h2>CERTIFICATIONS</h2>
+
+  <ul>
+    <li>AWS Certified Cloud Practitioner</li>
+    <li>Professional Scrum Master I (PSM I)</li>
+    <li>Microsoft Office Specialist</li>
+    <li>Financial Analysis, Forecasting & Modeling</li>
+    <li>AI Capabilities and Limitations (2026)</li>
+    <li>Claude 101 (2026)</li>
+  </ul>
+
+</section>
+
+</div>
+</body>
+</html>
